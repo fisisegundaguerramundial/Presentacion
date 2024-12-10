@@ -1,0 +1,185 @@
+.title{
+    font-size: 36px; 
+    font-weight: bold;
+    color: #007acc; 
+    text-transform: uppercase;
+    font-family: Arial, sans-serif; 
+    letter-spacing: 2px; 
+    text-align: center; 
+}
+.portada{
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+.first::first-letter{font-size: 40px;color: #0056b3;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+.contenedor {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduccion {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.multimedia {
+    margin-bottom: 20px;
+}
+
+.multimedia video, .multimedia audio {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.imagenes .galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagenes .galeria img {
+    width: 30%;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.volver {
+    margin: 20px 0;
+}
+
+.volver .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.volver .boton:hover {
+    background-color: #0056b3;
+}
+
+.tabla-guerra {
+    margin: 0 auto; 
+    border-collapse: collapse;
+    width: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.tabla-guerra th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+}
+
+.tabla-guerra td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.aliados {
+    background-color: #d6e9f9;
+    color: #0a3958; 
+}
+
+.eje {
+    background-color: #f9d6d6; 
+    color: #590a0a; 
+}
+
+.tabla-guerra tr:hover {
+    background-color: #f0f0f0;
+    transition: 0.3s;
+}
+.fire-hr {
+    border: none;
+    height: 10px;
+    background: linear-gradient(90deg, 
+                #ff0000, 
+                #ff7300, 
+                #ffd700, 
+                #ff7300, 
+                #ff0000);
+    background-size: 400% 400%;
+    animation: fireEffect 2s infinite;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8),
+                0 0 30px rgba(255, 115, 0, 0.8),
+                0 0 40px rgba(255, 215, 0, 0.8);
+}
+
+@keyframes fireEffect {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    overflow-x: auto; 
+    background-color: #f5f5f5; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ddd;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 14px; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+.responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
